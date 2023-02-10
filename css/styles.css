@@ -136,19 +136,31 @@ span {
     color: var(--b-active-color);
 }
 
-.hero-button {
+.button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.04em;
     border-radius: 4px;
-    padding: 16px 32px;
+}
+
+.hero-button {
     background-color: var(--accent-color);
     color: var(--b-active-color);
     width: 169px;
     height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--active-color);
 }
 
 .advantage {
     background-color: var(--b-active-color);
     padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .advantage-list {
@@ -159,7 +171,6 @@ span {
     margin-right: 24px;
 }
 .advantage-title {
-  
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -178,6 +189,7 @@ span {
     text-align: center;
     background-color: var(--b-active-color);
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .section-link {
@@ -197,7 +209,7 @@ span {
 
 .about {
     padding-top: 120px;
-        padding-bottom: 120px;
+    padding-bottom: 120px;
     height: 732px;
     left: 0px;
     top: 1548px;
@@ -306,18 +318,23 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .portfolio-button {
     border: 1px solid var(--b-color);
-    border-radius: 4px;
     box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
-    margin-bottom: 72px;
     color: var(--accent-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--active-color);
+    color: var(--b-active-color);
 }
 
  .button-list .button-link:not(:last-child) {
