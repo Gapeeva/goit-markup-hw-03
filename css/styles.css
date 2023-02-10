@@ -117,9 +117,10 @@ span {
 
 .hero {
     background-color: var(--main-color);
+    width: 1440px;
     height: 600px;
     left: 0px;
-    top: 62px;
+    top: 72px;
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -133,6 +134,7 @@ span {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
     color: var(--b-active-color);
 }
 
@@ -140,16 +142,20 @@ span {
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     border-radius: 4px;
 }
 
 .hero-button {
+    border: none;
     background-color: var(--accent-color);
     color: var(--b-active-color);
-    width: 169px;
-    height: 56px;
+    min-width: 169px;
+    min-height: 56px;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -322,7 +328,9 @@ span {
 }
 
 .portfolio-button {
+    background-color: var(--b-second-color);
     border: 1px solid var(--b-color);
+    min-height: 48px;
     box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
